@@ -9,4 +9,7 @@ class MessagesController < ApplicationController
     head status: 200
   end
 
+  def new
+  end
+
 end
