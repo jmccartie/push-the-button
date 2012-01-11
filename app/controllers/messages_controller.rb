@@ -5,7 +5,7 @@ class MessagesController < ApplicationController
     Pusher.key = ENV['PUSHER_KEY']
     Pusher.secret = ENV['PUSHER_SECRET']
 
-    Pusher['music-channel'].trigger('play_sound', {foo: "bar", baz: "qiz"})
+    Pusher['music-channel'].trigger('play_sound', {time_sent: Time.now})
     head status: 200
   end
 
