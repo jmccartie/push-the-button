@@ -11,3 +11,10 @@ Play some music via cell phones
 5. ???
 6. Profit!
 
+# Latency
+
+The biggest question here for a musical application is latency.
+
+I ran some tests off Heroku and got an average of 849ms.
+
+Granted, these are based off the server time and the phone's time, so the exact number may not be accurate.
